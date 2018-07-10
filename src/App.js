@@ -92,7 +92,7 @@ const App = observer(class App extends React.Component {
         right = x !== this.size - 1,
         down = y !== this.size - 1,
         left = x !== 0,
-        isAlive = storePos => this.grid[storePos].val === Constants.ALIVE || this.grid[storePos].val === Constants.NEW
+        isAlive = storePos => this.grid[storePos].val + 1 // === Constants.ALIVE || this.grid[storePos].val === Constants.NEW
        
        const neighbors = [
         [up, pos - this.size],
